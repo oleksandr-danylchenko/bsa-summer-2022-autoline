@@ -8,11 +8,13 @@ datasource db {
 }
 
 model User {
-  id       String  @id @default(uuid())
-  email    String  @unique @db.VarChar(80)
-  password String  @db.VarChar(80)
+  id                     String  @id @default(uuid())
+  email                  String  @unique @db.VarChar(80)
+  password               String
   /// Full name of a user
-  name     String  @db.VarChar(200)
-  phone    String? @db.VarChar(20)
-  location String?
+  name                   String  @db.VarChar(200)
+  phone                  String? @db.VarChar(20)
+  location               String?
+  emailConfirmed         Boolean @default(false)
+  emailConfirmationToken String?
 }

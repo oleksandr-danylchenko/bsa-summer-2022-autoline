@@ -12,6 +12,7 @@
       "@routes/*": ["./src/routes/*"],
       "@controllers/*": ["./src/controllers/*"],
       "@services/*": ["./src/services/*"],
+      "@repositories/*": ["./src/repositories/*"],
       "@middlewares/*": ["./src/middlewares/*"],
       "@dtos/*": ["./src/dtos/*"],
       "@helpers/*": ["./src/helpers/*"],
